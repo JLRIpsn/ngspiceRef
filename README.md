@@ -1,4 +1,4 @@
-# ngSpice Quick Reference
+# ngspiceRef
 > A quick reference sheet for ngspice, written in LaTeX
 
 ## Motivation
