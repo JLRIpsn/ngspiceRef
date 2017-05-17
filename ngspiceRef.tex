@@ -12,9 +12,26 @@
 \section{File Layout Summary}
 
 *Ngspice title and/or description (firstline) \\
-Circuit layout\\
-tests
+.include <directory/file>\\
+\\
+.param paramVal=10kV\\
+*Circuit layout\\
+VName 0 node2 DC voltageForDCanalysis SIN(DCopVoltage amplitudeVoltage freq)\\
+\\
+R1 0 node2 10k\\
+C1 0 node1 10uF\\
+L1 node1 node2 5mH\\
 
+*tests\\
+.control\\
+tran <timeForTransientSim> <simStepSize>\\
+meas tran valName PP v(node1)\\
+*PP= peak to peak\\
+echo "words"\\
+plot v(node1)\\
+.endc\\
+\\
+.end\\
 \section{Basic Circuit Components}
 \ldots{}
 \section{Test and measurement basics}
