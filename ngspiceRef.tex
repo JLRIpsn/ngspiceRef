@@ -1,7 +1,10 @@
 %An ngspice reference sheet
 %By JLRIpsn
 
-\documentclass{article}
+\documentclass[a4paper]{article}
+
+%need to include font that supports < and > symbols
+\usepackage[T1]{fontenc}
 
 \author{JLRIpsn}
 \title{An ngspice Quick Reference}
@@ -31,11 +34,37 @@ echo "words"\\
 plot v(node1)\\
 .endc\\
 \\
-.end\\
+.end
 \section{Basic Circuit Components}
-\ldots{}
-\section{Test and measurement basics}
-\ldots{}
+\begin{table}[!ht]
+	\begin{tabular}{| c | c |}
+		\hline
+		DC Vsource & V<name> <node-> <node+> DC <value(V)> \\
+		\hline
+		AC Vsource & V<name> <node-> <node+> DC 0V SIN(<DCoffset(V)> <amplitude(V)> <freq(Hz)> \\
+		\hline
+		Resistor & R<name> <node1> <node2> \\
+		\hline
+		Capacitor & C<name> <node1> <node2> <value(F)> \\
+		\hline
+		Inductor & L<name> <node1> <node2> <value(H)> \\
+		\hline
+		Diode & D<name> ... \\
+		\hline
+		MOSFET & M<name> ... \\
+		\hline
+		BJT & ... \\
+		\hline
+		Op-Amp &  ... \\
+		\hline
+	\end{tabular}
+	\caption{\label{tab:comps} Basic circuit components}
+\end{table}
 
+\newpage
+\section{Test and measurement basics}
+\subsection{DC}
+\subsection{Transient}
+\subsection{AC}
 
 \end{document}
