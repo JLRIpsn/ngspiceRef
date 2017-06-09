@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.16)  23 MAY 2017 14:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.16)  9 JUN 2017 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -75,30 +75,56 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 40.
 
-Overfull \hbox (128.08478pt too wide) in paragraph at lines 40--61
+Overfull \hbox (131.97272pt too wide) in paragraph at lines 40--61
 [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
  []
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./ngspiceRef.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (4.85901pt too wide) in paragraph at lines 67--73
+\T1/cmr/m/n/10 meas <test> <meau-re-ment-Type> <quan-tity> <ad-di-tion-al-Spec-
+i-fiers(optional)> 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
+
+ []
+
+
+Overfull \hbox (5.35559pt too wide) in paragraph at lines 78--82
+\T1/cmr/m/n/10 meas TRAN <name-For-Value> MAX <quan-tity> meas TRAN <name-For-V
+alue>
+ []
+
+[2] (./ngspiceRef.aux) ) 
 Here is how much of TeX's memory you used:
  447 strings out of 494953
  4138 string characters out of 6180977
- 51263 words of memory out of 5000000
+ 52263 words of memory out of 5000000
  3798 multiletter control sequences out of 15000+600000
  10990 words of font info for 29 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 23i,7n,18p,139b,190s stack positions out of 5000i,500n,10000p,200000b,80000s
- <
-/home/Joseph/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/Jose
-ph/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/Joseph/.texmf-
-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/Joseph/.texmf-var/fonts/
-pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/Joseph/.texmf-var/fonts/pk/ljfour/
-jknappen/ec/ecrm1728.600pk>
-Output written on ngspiceRef.pdf (2 pages, 41625 bytes).
+ 23i,7n,18p,145b,190s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/Joseph/.texmf-var/fonts/pk/ljfour/jknappen/ec/e
+cbx1200.600pk> </home/Joseph/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.60
+0pk> </home/Joseph/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </hom
+e/Joseph/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/Joseph/.
+texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
+Output written on ngspiceRef.pdf (2 pages, 46063 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
+ 174 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)

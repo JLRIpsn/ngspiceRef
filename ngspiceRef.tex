@@ -14,7 +14,7 @@
 \maketitle
 \section{File Layout Summary}
 
-*Ngspice title and/or description (firstline) \\
+*Ngspice title and/or description (first line) \\
 .include <directory/file>\\
 \\
 .param paramVal=10kV\\
@@ -41,7 +41,7 @@ plot v(node1)\\
 		\hline
 		DC Vsource & V<name> <node-> <node+> DC <value(V)> \\
 		\hline
-		AC Vsource & V<name> <node-> <node+> DC 0V SIN(<DCoffset(V)> <amplitude(V)> <freq(Hz)> \\
+		AC Vsource & V<name> <node-> <node+> DC 0V SIN(<DCoffset(V)> <amplitude(V)> <freq(Hz)>) \\
 		\hline
 		Resistor & R<name> <node1> <node2> \\
 		\hline
@@ -55,16 +55,36 @@ plot v(node1)\\
 		\hline
 		BJT & ... \\
 		\hline
-		Op-Amp &  ... \\
+		Subcircuit & X<name> <node1> <node2> ... <nodeN> <modelName>\\
 		\hline
 	\end{tabular}
 	\caption{\label{tab:comps} Basic circuit components}
 \end{table}
 
+model statements are needed for more advance components, including diodes, MOSFETs, and BJTs.\\
 \newpage
 \section{Test and measurement basics}
-\subsection{DC}
+Tests are placed within the block delimited the .control and .endc commands. A simultation is \\
+general commands:\\
+plot <quantity> <comparisonQuantiy(optional)>\\
+echo <textToPrint>\\
+meas <test> <meaurementType> <quantity> <additionalSpecifiers(optional)>\\
+quantities are denoted by v(<node>) for a node voltage or i(<component>) for a componenet current.\\
+
+.tran <stepSize> <duration>\\
+.op (calculates dc operating point)\\
+.dc <voltageSourceName> <startValue> <endValue> <stepsize> <\\
+
+meas command list\\
+meas TRAN <nameForValue> MAX <quantity>
+meas TRAN <nameForValue> MIN <quantity>
+meas TRAN <nameForValue> PP <quantity>
+
+
+\subsection{DC} 
 \subsection{Transient}
 \subsection{AC}
-
+\subsection{Additional Test and Measurement Commands}
+alter @<componentName>[subParameter] = [ new value ]\\
+e.g. alter @V1[sin] = [0.5V 1V 1k]
 \end{document}
